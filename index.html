@@ -5,210 +5,210 @@
     <meta name="viewport" content="width=<div class="login-container">
         <div class="login-header">
             <link rel="stylesheet" href="stylr.css">
-            <script src="https://kit.fontawesome.com/0b4417b980.js" crossorigin="anonymous"></script>
-          <style>
-           
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
+             <title>About — E-commerce</title>
 
-body {
-    background-color: #fff;
-    color: #1a1a1a;
-}
+  <style>
+    /* Reset-ish */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html,body { height: 100%; }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    border-bottom: 3px solid #e8eefc;
-}
+    body{
+      font-family: "Open Sans", Arial, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+    }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    color: #000;
-}
+    /* Top navigation */
+    .topbar {
+      height: 72px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 28px;
+      gap: 20px;
+    }
 
-.logo .icon {
-    font-size: 24px;
-    color: #000;
-    margin-right: 6px;
-}
+    .brand {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      font-size: 20px;
+    }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
+    .nav {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      margin-left: 18px;
+    }
 
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    transition: 0.3s;
-}
+    .nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 6px;
+    }
 
-nav ul li a.active,
-nav ul li a:hover {
-    color: #5d7ce8;
-}
+    .nav a.active { border-bottom: 2px solid #333; padding-bottom: 4px; }
 
-nav ul li a.contact {
-    background-color: #5d7ce8;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-}
+    .right-controls {
+      margin-left: auto;
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 60px;
-    gap: 50px;
-}
+    .search {
+      display:flex;
+      align-items:center;
+      background:#f2f2f2;
+      padding:8px 12px;
+      border-radius:6px;
+      font-size:14px;
+      min-width:230px;
+    }
 
-.hero-image img {
-    width: 450px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
+    .search input {
+      border:0;
+      background:transparent;
+      outline:none;
+      width:100%;
+      font-size:14px;
+      color:#666;
+    }
 
-.hero-text {
-    max-width: 400px;
-}
+    .btn {
+      border:0;
+      background:#e05b57;
+      color:white;
+      padding:8px 14px;
+      border-radius:6px;
+      cursor:pointer;
+      font-weight:600;
+    }
 
-.hero-text h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
+    .btn.ghost {
+      background:#fff;
+      color:#e05b57;
+      border:1px solid #eee;
+      padding:6px 12px;
+    }
 
-.hero-text p {
-    color: #555;
-    margin-bottom: 25px;
-}
+    /* Main container */
+    .container {
+      max-width: 1200px;
+      margin: 48px auto;
+      padding: 0 28px;
+    }
 
-.btn {
-    display: inline-block;
-    background-color: #cce2f9;
-    color: #000;
-    padding: 10px 22px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 600;
-}
+    .about-row {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 40px;
+      align-items: center;
+      min-height: 420px;
+    }
 
-.btn:hover {
-    background-color: #a9cdf5;
-}
+    /* Left content */
+    .kicker { color: #777; font-size: 14px; margin-bottom: 18px; }
+    h1.title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 56px;
+      margin-bottom: 18px;
+      letter-spacing: 0.02em;
+      color: #111;
+    }
 
-/* Features Section */
-.features {
-    background-color: #1f2b56;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 60px 0;
-}
+    .lead {
+      max-width: 640px;
+      color: #444;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
 
-.feature {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 25px;
-    width: 250px;
-    text-align: center;
-}
+    /* Right image box */
+    .art-wrap {
+      display:flex;
+      justify-content:center;
+    }
 
-.feature .number {
-    background-color: #e0e8ff;
-    color: #000;
-    font-weight: bold;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 15px auto;
-}
+    .art {
+      width: 100%;
+      max-width: 420px;
+      background: #78c6e8; /* fallback */
+      border-radius: 2px;
+      padding: 18px;
+      box-shadow: 0 2px 0 rgba(0,0,0,0.02);
+      display:block;
+    }
 
-.feature h3 {
-    margin-bottom: 10px;
-}
-
-.feature p {
-    color: #666;
-    font-size: 14px;
-}
-
-
- </style>  
-            
-
-        
-            
+    .art img {
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius:2px;
+    }
+  </style>
 </head>
 <body>
+
+  <header class="topbar" role="banner">
+    <div style="display:flex; align-items:center;">
+      <div class="brand">E-commerce</div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#" class="active">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Sign Up</a>
+        <a href="#" class="btn ghost" style="padding:6px 12px; border-radius:6px;">Shop</a>
+      </nav>
+    </div>
+
+    <div class="right-controls">
+      <div class="search" role="search" aria-label="Site search">
+        <input type="text" placeholder="What are you looking for?" aria-label="Search input">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="opacity:0.6">
+          <path d="M21 21l-4.35-4.35" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="11" cy="11" r="6" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <button class="btn">log in</button>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="about-row" aria-labelledby="our-story-heading">
+      <!-- Left column -->
+      <div>
+        <div class="kicker">About</div>
+        <h1 id="our-story-heading" class="title">Our Story</h1>
+
+        <p class="lead">
+          Launced in 2015, Exclusive is South Asia’s premier online shopping marketplace with an active presence in Bangladesh. Supported by a wide range of tailored marketing, data and service solutions, Exclusive has 10,500 sellers and 300 brands and serves 3 million+ customers across the region.
+        </p>
+
+        <p class="lead">
+          Exclusive has more than 1 Million products to offer, growing at a very fast pace. Exclusive offers a diverse assortment in categories ranging from consumer electronics to fashion and home goods.
+        </p>
+      </div>
+
+      <!-- Right column image -->
+      <div class="art-wrap">
+        <!-- Use the image path available in your environment -->
+        <figure class="art" aria-hidden="true">
+          <img src="data:image/jpeg;base64,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" alt="Shopping Online"
+
+        </figure>
+         </div>
+        </section>
+        </main>
     
 
-     <!-- Header -->
-    <header>
-        <div class="logo">
-            <span class="icon">⬢</span> Blue
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Templates</a></li>
-                <li><a href="#" class="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" alt="Cloud">
-        </div>
-        <div class="hero-text">
-            <h1>Blue Website Template Collection</h1>
-            <p>Our Source for Professional Blue Website Templates</p>
-            <a href="#" class="btn">Get Started →</a>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="feature">
-            <div class="number">1</div>
-            <h3>Elegant Blue Design</h3>
-            <p>Ullamcorper primis, nam pretium suspendisse neque</p>
-        </div>
-        <div class="feature">
-            <div class="number">2</div>
-            <h3>Your vision</h3>
-            <p>Ullamcorper primis, nam pretium suspendisse neque</p>
-        </div>
-        <div class="feature">
-            <div class="number">3</div>
-            <h3>User-Friendly Design</h3>
-            <p>Ullamcorper primis, nam pretium suspendisse neque</p>
-        </div><i class="fa-brands fa-github"></i>
-        <p style="font-size:100px">&#128540;</p>
-<p>I will display &#128540;</p>
-
-    </section>
-
-</body>
-</html>
+     </section>
+      </main>
